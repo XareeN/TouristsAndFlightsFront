@@ -1,38 +1,107 @@
-.App {
-  text-align: center;
+body {
+  font-family: Arial, Helvetica, sans-serif;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+::selection{
+  color: #1f738d;
+  background-color: transparent;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+header {
+  background: transparent;
+  padding: 1rem 0;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  position: fixed;
+  z-index: 1001;
+  width: 100%;
+  height: 6rem;
+}
+header h1{
+  font-weight: bold;
+  float: left;
+  color: white;
+  margin-bottom: 0;
+  align-self: center;
+}
+header nav{
+  /* float: right; */
+  align-self: center;
+}
+header nav ul{
+  list-style-type: none;
+  margin: 0;
+  display: flex;
+}
+header nav ul li a{
+  padding: 1rem;
+  color: white;
+  font-weight: bold;
+  letter-spacing: 3px;
+}
+header nav ul li a:hover{
+  background: rgba(32, 33, 33, 0.2);
+  text-decoration: none;
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.navbar-container{
+  display: flex;
+  justify-content: space-between;
+  width: 75vw;
+  margin: 0 auto;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#navbar {
+  width: 100%;
+  height: 6rem;
+  position: fixed;
+  display: flex;
+  top: 0;
+  left: 0;
+  padding: 0;
+  color: white;
+  box-shadow: none;
+  background-color: transparent;
+  z-index: 1001;
+  transition: all 0.3s ease-out;
 }
+#background-section{
+  background-color: white;
+}
+#upper-bg-img {
+  width: 100%;
+  height: 25vh;
+  position: fixed;
+  display: flex;
+  top: 0;
+  left: 0;
+  padding: 0;
+  box-shadow: none;
+  /* background-color: #fff000;
+  background-image: linear-gradient(315deg, #fff000 0%, #ed008c 74%); */
+  /* background-color: #bf033b;
+  background-image: linear-gradient(315deg, #bf033b 0%, #ffc719 74%); */
+  background-color: #abe9cd;
+  background-image: linear-gradient(315deg, #abe9cd 0%, #3eadcf 74%);
+  z-index: 1;
+}
+.table-container {
+  width: 70vw;
+
+  /* height: 30rem; */
+  position: absolute;
+  display: flex;
+  top: 20%;
+  left: 50%;
+  padding: 2rem;
+  margin-bottom: 5rem;
+  border-radius: 2rem;
+  box-shadow: 0 25px 50px 0px rgba(32, 33, 33, 0.2);
+  background-color: rgba(255, 255, 255, 1);
+  z-index: 1;
+  transform: translateX(-50%);
+  transition: all 0.3s ease-out;
+}
+.MuiPaper-root.MuiPaper-elevation2.MuiPaper-rounded{
+  width: 100%;
+  box-shadow: none;
+}
+/* #material-table {
+  width: 100%;
+} */
